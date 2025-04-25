@@ -6,6 +6,7 @@
     overflow: hidden;
 }
 body{
+    max-width: 100%;
     height: auto;
 }
 header{
@@ -29,13 +30,15 @@ header nav ul li a{
     font-weight: bold;
 }
 header nav ul li a:hover{
-    background-color: black;
-    color: white;
+    transform-style: preserve-3d;
     padding: 10px;
     border-radius: 5px;
+    transform: scale(2.1);
+    transition: 0.5s;
 }
-header nav button{
+button{
     background-color: rgba(255, 247, 0, 0.807);
+    margin-left: 20px;
 }
 header h1{
     color:rgb(210, 210, 85);
@@ -44,12 +47,16 @@ footer{
     justify-content: center;
     display: flex;
     align-items: center;
+    font-weight: bolder;
+    font-size: 30px;
+    color:rgb(210, 210, 85);
 }
 .social-media{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    list-style: none;
 }
 nav a.active{
     background-color: rgba(0, 0, 255, 0.521);
